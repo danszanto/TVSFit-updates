@@ -1,6 +1,6 @@
 {
-  "version": "0.3.1",
-  "url": "https://github.com/danszanto/TVSFit-releases/releases/tag/v0.3.1",
-  "download": "https://github.com/danszanto/TVSFit-releases/releases/download/v0.3.1/TVSFit-Setup-0.3.1.exe",
-  "notes": "# TVSFit 0.3.1\n\n### Fixed\n- The installed app's icon (executable, shortcuts) is the TVSFit icon again; the PyInstaller build had shown the default Python icon.\n- Evaluating a case or running the optimizer no longer flashes a command window for `hpeesofsim`.\n\nThis build was made with PyInstaller (one-folder), like 0.3.0.\n"
+  "version": "0.4.0",
+  "url": "https://github.com/danszanto/TVSFit-releases/releases/tag/v0.4.0",
+  "download": "https://github.com/danszanto/TVSFit-releases/releases/download/v0.4.0/TVSFit-Setup-0.4.0.exe",
+  "notes": "# TVSFit 0.4.0\n\nTVSFit now opens as the device workspace.\n\n### New\n- **Devices sidebar**: every device profile in a library folder is listed. Double-click one to switch to it (the device you leave is saved automatically). The open device shows its measurements and their runs.\n- **Several measurements per device**: import a wfm .zip (in the usual window-picking dialog), a QSIV / PIV .csv, or a whole folder of wfm zips at once. Every run belongs to one measurement. Measurements can be sorted into folders and renamed.\n- **Compare tab**: tick runs or measurements in the sidebar to see them on one plot, with one error table computed the same way for every run.\n- **Queue panel**: shows what is running and what is waiting. Entries can be moved up or down, held, skipped or removed.\n- **Plot configuration per screen** (Data tab, Evaluate plots, Optimizer plots, Compare tab): fonts, grid, legend and background, per-curve width, colour, line style and markers, and which annotations are drawn. Changes show in a live preview and are remembered.\n- The loss table also shows each loss **unweighted** (every weight taken as 1).\n\n### Changed\n- The **PIV trigger-voltage** term is no longer part of the loss. Runs saved with a weight for it still open; that weight is ignored.\n- The Log tab always scrolls to its newest line.\n\nDevice profiles saved by 0.3.x open in this version.\n"
 }
